@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <ui version="4.0">
  <class>mainWindow</class>
- <widget class="CDPBaseMainWindow" name="mainWindow">
+ <widget name="mainWindow" class="CDPBaseMainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>804</width>
-    <height>682</height>
+    <width>1255</width>
+    <height>704</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,8 +31,8 @@
   <property name="keyPadName" stdset="0">
    <string>CDPBaseKeyPad</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="frame">
+  <widget name="centralwidget" class="QWidget">
+   <widget name="frame" class="QFrame">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -47,7 +47,7 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QGroupBox" name="groupBox">
+    <widget name="groupBox" class="QGroupBox">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -59,23 +59,23 @@
      <property name="title">
       <string>Coordinates</string>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
+     <layout name="verticalLayout" class="QVBoxLayout">
       <item>
-       <widget class="CDPBaseLabel" name="label_2">
+       <widget name="label_2" class="CDPBaseLabel">
         <property name="text">
          <string>X</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="CDPBaseLabel" name="label_4">
+       <widget name="label_4" class="CDPBaseLabel">
         <property name="text">
          <string>Y</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="CDPBaseLabel" name="label_3">
+       <widget name="label_3" class="CDPBaseLabel">
         <property name="text">
          <string>Z</string>
         </property>
@@ -83,7 +83,7 @@
       </item>
      </layout>
     </widget>
-    <widget class="QFrame" name="frame_3">
+    <widget name="frame_3" class="QFrame">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -98,7 +98,7 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="CDPBaseBar" name="verticalBar">
+     <widget name="verticalBar" class="CDPBaseBar">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -135,7 +135,7 @@
        <string>:/themes/flat_gray_light/bars/barBase.svg</string>
       </property>
      </widget>
-     <widget class="CDPBaseBar" name="verticalBar_2">
+     <widget name="verticalBar_2" class="CDPBaseBar">
       <property name="geometry">
        <rect>
         <x>68</x>
@@ -154,7 +154,7 @@
        <string>:/themes/flat_gray_light/bars/barBase.svg</string>
       </property>
      </widget>
-     <widget class="CDPBaseBar" name="verticalBar_3">
+     <widget name="verticalBar_3" class="CDPBaseBar">
       <property name="geometry">
        <rect>
         <x>126</x>
@@ -173,7 +173,7 @@
        <string>:/themes/flat_gray_light/bars/barBase.svg</string>
       </property>
      </widget>
-     <widget class="QWidget" name="layoutWidget">
+     <widget name="layoutWidget" class="QWidget">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -182,23 +182,23 @@
         <height>19</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <layout name="horizontalLayout_3" class="QHBoxLayout">
        <item>
-        <widget class="CDPBaseLabel" name="label">
+        <widget name="label" class="CDPBaseLabel">
          <property name="text">
           <string>X</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="CDPBaseLabel" name="label_5">
+        <widget name="label_5" class="CDPBaseLabel">
          <property name="text">
           <string>Y</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="CDPBaseLabel" name="label_6">
+        <widget name="label_6" class="CDPBaseLabel">
          <property name="text">
           <string>Z</string>
          </property>
@@ -208,7 +208,7 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QFrame" name="frame_2">
+   <widget name="frame_2" class="QFrame">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -223,7 +223,7 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="CDPBaseLamp" name="lampManual">
+    <widget name="lampManual" class="CDPBaseLamp">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -239,7 +239,7 @@
       <enum>CDPBaseLamp::Ring</enum>
      </property>
     </widget>
-    <widget class="CDPBaseToggleButton" name="toggleManAuto">
+    <widget name="toggleManAuto" class="CDPBaseToggleButton">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -267,7 +267,7 @@
       <string>Off</string>
      </property>
     </widget>
-    <widget class="CDPBaseButton" name="buttonStart">
+    <widget name="buttonStart" class="CDPBaseButton">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -336,7 +336,7 @@
       </color>
      </property>
      <property name="cdpPressedRouting" stdset="0">
-      <string>Modbus.ModbusSlaveTCP.ModbusSlavePacket1</string>
+      <string>Modbus.ModbusMasterTCP.write coils.commands.tray 1.Value</string>
      </property>
      <property name="pushRoutables" stdset="0">
       <stringlist>
@@ -344,7 +344,7 @@
       </stringlist>
      </property>
     </widget>
-    <widget class="CDPBaseButton" name="buttonStop">
+    <widget name="buttonStop" class="CDPBaseButton">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -371,7 +371,7 @@
       </stringlist>
      </property>
     </widget>
-    <widget class="CDPBaseButton" name="buttonEmergency">
+    <widget name="buttonEmergency" class="CDPBaseButton">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -401,7 +401,7 @@
       </stringlist>
      </property>
     </widget>
-    <widget class="CDPBaseLamp" name="lampEmergencyStop">
+    <widget name="lampEmergencyStop" class="CDPBaseLamp">
      <property name="geometry">
       <rect>
        <x>200</x>
@@ -420,7 +420,7 @@
       <enum>CDPBaseLamp::Ring</enum>
      </property>
     </widget>
-    <widget class="CDPBaseButton" name="buttonStop_2">
+    <widget name="buttonStop_2" class="CDPBaseButton">
      <property name="geometry">
       <rect>
        <x>210</x>
@@ -447,7 +447,7 @@
       </stringlist>
      </property>
     </widget>
-    <widget class="CDPBaseLabel" name="label_10">
+    <widget name="label_10" class="CDPBaseLabel">
      <property name="geometry">
       <rect>
        <x>190</x>
@@ -460,7 +460,7 @@
       <string>Emergency Stop</string>
      </property>
     </widget>
-    <widget class="CDPBaseLabel" name="label_11">
+    <widget name="label_11" class="CDPBaseLabel">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -473,18 +473,18 @@
       <string>Manual Control</string>
      </property>
     </widget>
-    <widget class="QWidget" name="layoutWidget">
+    <widget name="layoutWidget" class="QWidget">
      <property name="geometry">
       <rect>
        <x>200</x>
        <y>250</y>
        <width>102</width>
-       <height>140</height>
+       <height>146</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout name="verticalLayout_2" class="QVBoxLayout">
       <item>
-       <widget class="CDPBaseToggleButton" name="toggleButton_3">
+       <widget name="toggleButton_3" class="CDPBaseToggleButton">
         <property name="pushRoutables" stdset="0">
          <stringlist>
           <string>cdpTextMsgRouting</string>
@@ -497,7 +497,7 @@
        </widget>
       </item>
       <item>
-       <widget class="CDPBaseToggleButton" name="toggleButton_2">
+       <widget name="toggleButton_2" class="CDPBaseToggleButton">
         <property name="pushRoutables" stdset="0">
          <stringlist>
           <string>cdpTextMsgRouting</string>
@@ -510,7 +510,7 @@
        </widget>
       </item>
       <item>
-       <widget class="CDPBaseToggleButton" name="toggleButton">
+       <widget name="toggleButton" class="CDPBaseToggleButton">
         <property name="pushRoutables" stdset="0">
          <stringlist>
           <string>cdpTextMsgRouting</string>
@@ -524,7 +524,7 @@
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="layoutWidget">
+    <widget name="layoutWidget" class="QWidget">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -533,9 +533,9 @@
        <height>61</height>
       </rect>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout name="horizontalLayout" class="QHBoxLayout">
       <item>
-       <widget class="CDPBaseLamp" name="lampActive">
+       <widget name="lampActive" class="CDPBaseLamp">
         <property name="palette">
          <palette>
           <active>
@@ -702,7 +702,7 @@
        </widget>
       </item>
       <item>
-       <widget class="CDPBaseLamp" name="lampIdle">
+       <widget name="lampIdle" class="CDPBaseLamp">
         <property name="widgetStyle" stdset="0">
          <number>2</number>
         </property>
@@ -712,7 +712,7 @@
        </widget>
       </item>
       <item>
-       <widget class="CDPBaseLamp" name="lampStop">
+       <widget name="lampStop" class="CDPBaseLamp">
         <property name="widgetStyle" stdset="0">
          <number>1</number>
         </property>
@@ -723,7 +723,7 @@
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="layoutWidget">
+    <widget name="layoutWidget" class="QWidget">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -732,23 +732,23 @@
        <height>19</height>
       </rect>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <layout name="horizontalLayout_2" class="QHBoxLayout">
       <item>
-       <widget class="CDPBaseLabel" name="label_7">
+       <widget name="label_7" class="CDPBaseLabel">
         <property name="text">
          <string>Active</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="CDPBaseLabel" name="label_8">
+       <widget name="label_8" class="CDPBaseLabel">
         <property name="text">
          <string>Idle</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="CDPBaseLabel" name="label_9">
+       <widget name="label_9" class="CDPBaseLabel">
         <property name="text">
          <string>Stop</string>
         </property>
@@ -756,7 +756,7 @@
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="layoutWidget">
+    <widget name="layoutWidget" class="QWidget">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -765,23 +765,23 @@
        <height>121</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
+     <layout name="verticalLayout_3" class="QVBoxLayout">
       <item>
-       <widget class="CDPBaseLabel" name="label_12">
+       <widget name="label_12" class="CDPBaseLabel">
         <property name="text">
          <string>Tray 1</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="CDPBaseLabel" name="label_14">
+       <widget name="label_14" class="CDPBaseLabel">
         <property name="text">
          <string>Tray 2</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="CDPBaseLabel" name="label_13">
+       <widget name="label_13" class="CDPBaseLabel">
         <property name="text">
          <string>Tray 3</string>
         </property>
@@ -789,6 +789,27 @@
       </item>
      </layout>
     </widget>
+   </widget>
+   <widget name="webView" class="QWebView">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>60</y>
+      <width>491</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="url">
+     <url>
+      <string>http://127.0.0.1:7689/www/index.html</string>
+     </url>
+    </property>
+    <property name="zoomFactor">
+     <double>0.200000002980232</double>
+    </property>
+    <property name="renderHints">
+     <set>QPainter::SmoothPixmapTransform|QPainter::TextAntialiasing</set>
+    </property>
    </widget>
   </widget>
  </widget>
@@ -833,6 +854,11 @@
    <extends>QMainWindow</extends>
    <header>CDPBaseWidgets/CDPBaseMainWindow.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKitWidgets/QWebView</header>
   </customwidget>
  </customwidgets>
  <resources/>
